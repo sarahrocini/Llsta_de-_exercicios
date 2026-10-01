@@ -1,6 +1,15 @@
-const produtos = [ 
-{ id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true }, 
-{ id: 2, nome: "Mouse", preco: 80, estoque: 0, ativo: true }, 
-{ id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false }, 
-{ id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true } 
-]; 
+/*2. filter ── ⋆⋅𖤓⋅⋆ ──── ⋆⋅𖤓⋅⋆ ──── ⋆⋅𖤓⋅⋆ ──── ⋆⋅𖤓⋅⋆ ──
+Selecione somente os itens que atendem a uma condição.
+3. 𖤓 Crie um array contendo apenas os produtos que estão ativos (ativo: true).
+*/
+
+const produtos = [
+{ id: 1, nome: "Notebook", preco: 3500, estoque: 5, ativo: true },
+{ id: 2, nome: "Mouse", preco: 80, estoque: 0, ativo: true },
+{ id: 3, nome: "Teclado", preco: 150, estoque: 10, ativo: false },
+{ id: 4, nome: "Monitor", preco: 1200, estoque: 3, ativo: true }
+];
+
+const produtosAtivos = produtos.filter(produto => produto.ativo);
+
+console.log(produtosAtivos);
